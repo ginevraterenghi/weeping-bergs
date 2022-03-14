@@ -1,2 +1,2 @@
-# weeping-bergs
-infopoetry
+# weepingbergs
+info-poetry++

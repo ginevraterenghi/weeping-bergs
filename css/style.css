@@ -1,0 +1,635 @@
+/*! avoid stroke when click play button */
+* {
+	outline: none;
+}
+
+@font-face {
+	font-family: ariah;
+	src: url(../assets/font/ariah.ttf);
+}
+
+A.class1 {color:#2a3b43;}
+A.class1:link  {text-decoration: none; cursor: pointer; font-family: 'Helvetica'}
+A.class1:visited {text-decoration: none; color: #2a3b43;}
+A.class1:hover {text-decoration: none; color: #d3fc8d;}
+A.class1:active {text-decoration: none; color: #2a3b43;}
+
+A.class2 {color:#b9cdd8;}
+A.class2:link {text-decoration: none; color: #b9cdd8; font-family: 'Helvetica'}
+A.class2:visited {text-decoration: none; color: #b9cdd8;}
+A.class2:hover {text-decoration: none; color: #d3fc8d;}
+A.class2:active {text-decoration: none; color: #b9cdd8;}
+
+A.class3 {color:#d3fc8d;}
+A.class3:link {text-decoration: none; cursor: n-resize; color: #d3fc8d; font-family: 'Helvetica'}
+
+
+
+/*! ------------------------------------------ SFONDO-FOTO ------------------------------------------ */
+
+#beginning {
+	padding: 0px;
+	margin: 0px;
+	border:0px;
+	position: 0px;
+}
+
+video {
+	display: block;
+	z-index: -10;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	/* min-width: 100%;
+    min-height: 100%; */
+/*	width: 100%;*/
+	background-color: red;
+/*	background-size: cover;*/
+/*	opacity: 0.75;*/
+}
+
+
+/*! ------------------------------------------ HOMEPAGE ------------------------------------------ */
+
+/*! Homepage text */
+
+.label {
+	background-color: rgba(255, 255, 255, 0.8);
+	opacity: .8;
+	opacity: inherit;
+	padding: 20px;
+	color: #011ac2;
+}
+
+.title_super {
+	font-family: 'ariah';
+	font-size: 9vh;
+	line-height: 1em;
+	color: #d3fc8d;
+}
+
+.subtitle_super {
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 100;
+	font-size: 24px;
+	color: #d3fc8d;
+	display: block;
+	margin-top: 30px;
+}
+
+.fissoSX {
+	font-style: "Roboto Slab";
+	font-size: 0.8em;
+	color: #d3fc8d;
+	padding-left: 10vh; 
+}
+
+.cap1 {
+	font-size: 3em;
+	font-family: 'ariah';
+	color: #d3fc8d;
+	font-weight: 300;
+}
+
+.cap2 {
+	font-size: 2em;
+	font-family: 'ariah';
+	color: #b9cdd8;
+	font-weight: 200;
+}
+
+.cap3 {
+	font-size: 2em;
+	font-family: 'ariah';
+	color: #92a8b3;
+	font-weight: 200;
+}
+
+.cap4 {
+	font-size: 2em;
+	font-family: 'ariah';
+	color: #546c76;
+	font-weight: 200;
+}
+
+.cap5 {
+	font-size: 2em;
+	font-family: 'ariah';
+	color: #2a3b43;
+	font-weight: 200;
+}
+
+/*!  homepage structure  */
+
+.homepage {
+    height: 190vh;
+	position: relative;
+	text-align: center;
+/*	background-color: pink;*/
+/*	background-image: url("newfoundland.jpg");*/
+}
+
+
+.intro {	
+}
+
+
+.description {
+	height: 50vh;
+	position: relative;
+/*	text-align: center;*/
+/*	margin-bottom: 30vh;*/
+	margin-top: 45vh;
+/*	background-color: #d3fc8d;*/
+}
+
+
+.fisso-sinistra {
+	position: fixed;
+	z-index: 1;
+	padding: 0em;
+	padding-left: 0em;
+	padding-top: 2em;
+	max-width: 20em;
+	top: 1em;
+	left: 1em;
+	text-align: left;
+}
+
+.foto-tela {
+	padding: 0em;
+	top: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+	background-image: url(../img/tela.jpg);
+}
+
+
+/*! --------------------------------- BACKGROUND SECTION COLOR --------------------------------- */
+
+#pic {
+	background-color: #ccdbe6;
+	padding:0;
+	margin:0;
+}
+
+#background_lightblue {
+	background-color: #ccdbe6;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding:0;
+	margin:0;
+	
+}
+
+#background_blue {
+	background-color: #b9cdd8;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left:0px;
+	padding-right:0px;
+	margin:0px;
+	
+}
+
+#background_darkblue {
+	background-color: #92a8b3;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left:0px;
+	padding-right:0px;
+	margin:0;
+}
+
+#background_white {
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left:0px;
+	padding-right:0px;
+	margin:0;
+}
+
+#headline {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	padding-left:0px;
+	padding-right:0px;
+	margin:0;
+}
+
+
+#primocap {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	padding-left:0px;
+	padding-right:0px;
+	margin:0;
+}
+
+/*! ------------------------------------------ TEXT --------------------------------------------- */
+
+/*! Testi affiancati */
+
+.text_paragraph {
+	font-family: 'Roboto Slab';
+	text-align: justify;
+	font-weight: 60;
+	color: #d3fc8d;
+	font-size: 2vh;
+	line-height: 1.8;
+	margin-top: 2vh;
+}
+
+.text_paragraph_main {
+	font-family: 'Helvetica';
+	text-align: justify;
+	font-weight: 100;
+	color: #2a3b43;
+	font-size: 2vh;
+	line-height: 1.8;
+	margin-top: 2vh;
+}
+
+.text_data {
+	font-family: 'Roboto Slab';
+	text-align: justify;
+	font-weight: 60;
+	color: #d3fc8d;
+	font-size: 2vh;
+	line-height: 1.8;
+	margin-top: 2vh;
+}
+
+.data {
+	font-family: 'Helvetica';
+	text-align: justify;
+	font-weight: 60;
+	color: #d3fc8d;
+	font-size: 2vh;
+	line-height: 1.8;
+	margin-top: 4vh;
+}
+
+.paragrafo {
+	font-family: 'Playfair Display';
+	text-align: left;
+	color: #2a3b43;
+	font-size: 1.7vh;
+	line-height: 3vh;
+	margin: 2vh;
+	margin-left: 0vh;
+	-webkit-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 10vh;
+	column-gap: 10vh;
+	padding-bottom: 2vh;
+}
+
+.paragrafo2 {
+	font-family: 'Playfair Display';
+	text-align: left;
+	color: #2a3b43;
+	font-size: 1.7vh;
+	line-height: 3.2vh;
+	margin: 2vh;
+	margin-left: 0vh;
+	padding-bottom: 2vh;
+	padding-left: 10vh;
+}
+
+.cit {
+	font-family: 'Helvetica';
+	text-align: left;
+	color: #2a3b43;
+	font-size: 1.7vh;
+	line-height: 3.2vh;
+	margin: 2vh;
+	margin-left: 0vh;
+	padding-bottom: 2vh;
+	padding-left: 10vh;
+}
+
+.paragrafo3 {
+	font-family: 'Helvetica';
+	text-align: left;
+	color: #d3fc8d;
+	font-size: 1.9vh;
+	line-height: 3vh;
+	margin-right: 0vh;
+	margin-left: 0vh;
+	margin-top: 1vh;
+	padding-bottom: 2vh;
+	padding-left: 0vh;
+	padding-right: 10vh;
+}
+
+.paragrafoSpecial {
+	font-family: 'Playfair Display';
+	text-align: left;
+	color: #d3fc8d;
+	font-size: 1.7vh;
+	line-height: 3vh;
+	margin: 2vh;
+	margin-left: 0vh;
+	padding-bottom: 2vh;
+	padding-left: 3vh;
+}
+
+.soundTrack {
+	margin: 2vh;
+	margin-left: 0vh;
+	padding-bottom: 4vh;
+	padding-left: 0vh;
+}
+
+.space {
+	padding-left: 0em;
+	padding-right: 0em;
+	text-align: left;
+	margin: 0px;
+}
+
+.par {
+	font-size: 2em;
+	font-family: 'Helvetica';
+	font-size: 1.7vh;
+	color: #2a3b43;
+	font-weight: 300;
+}
+
+.legenda {
+	font-family: 'Helvetica';
+	text-align: left;
+	color: dimgray;
+	font-size: 1.4vh;
+	line-height: 2.7vh;
+	margin: 0vh;
+	margin-left: 2vh;
+	padding-bottom: 0vh;
+
+}
+
+.azzurro {
+	color: #DBF0F4;
+}
+
+
+.tela {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.container {
+	padding: 0px;
+	margin: 0px;
+}
+
+#biblio {
+	background: #546c76;
+	padding-top: 2vh;
+	padding-bottom: 4vh;
+	padding-left: 0em;
+}
+
+
+.text-data {
+	font-family: 'Helvetica';
+	text-align: left;
+	color: #b9cdd8;
+	font-size: 1.5vh;
+	line-height: 0vh;
+	margin-top: 2vh;
+	margin-bottom: 0vh;
+	margin-left: 0vh;
+	padding-bottom: 0vh;
+	padding-top: 1.3vh;
+	padding-left: 0vh;
+}
+
+.text-biblio {
+	font-family: 'Playfair Display';
+	text-align: left;
+	color: #dce8f8;
+	font-size: 1.5vh;
+	line-height: 0vh;
+	margin-top: 2vh;
+	margin-bottom: 0vh;
+	margin-left: 0vh;
+	padding-bottom: 0vh;
+	padding-top: 1.3vh;
+	padding-left: 10vh;
+}
+
+.text-footer {
+	font-family: 'Playfair Display';
+	text-align: left;
+	color: #92a8b3;
+	font-size: 1.2vh;
+	line-height: 2.3vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	margin-left: 0vh;
+	padding-bottom: 0vh;
+	padding-top: 0vh;
+	padding-left: 10vh;
+}
+
+.text-footer2 {
+	font-family: 'Playfair Display';
+	text-align: left;
+	color: #2a3b43;
+	font-size: 1.5vh;
+	line-height: 0vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	margin-left: 0vh;
+	padding-bottom: 0vh;
+	padding-top: 0vh;
+	padding-left: 0vh;
+}
+
+.text-footer3 {
+	font-family: 'Playfair Display';
+	text-align: left;
+	color: #546c76;
+	font-size: 1.3vh;
+	line-height: 2.3vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	margin-left: 0vh;
+	padding-bottom: 0vh;
+	padding-top: 0vh;
+	padding-left: 14vh;
+}
+
+.text-footer4 {
+	font-family: 'Playfair Display';
+	text-align: left;
+	color: #546c76;
+	font-size: 1.3vh;
+	line-height: 2.3vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	margin-left: 0vh;
+	padding-bottom: 0vh;
+	padding-top: 0vh;
+	padding-left: 0vh;
+}
+
+.text-name {
+	font-family: 'Helvetica';
+	text-align: left;
+	color: #92a8b3;
+	font-size: 1.7vh;
+	line-height: 2.3vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	margin-left: 0vh;
+	padding-bottom: 0vh;
+	padding-top: 0vh;
+	padding-left: 10vh;
+}
+
+#fondo {
+	background: #2a3b43;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+	padding-left: 0em;	
+	margin-left: 0em;	
+}
+
+/*! media */
+
+.footer_img {
+	width: auto;
+	height:50px;
+}
+
+/*! text */
+
+.infoTitle {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	margin-left: 0vh;
+	padding-left: 10vh;
+	font-family: "Playfair Display, sans-serif";
+	font-weight: 200;
+	font-size: 0.8rem;
+	color: #DBF0F4;
+}
+
+
+
+mark {
+	
+	background-color: #d3fc8d;
+}
+
+.info {
+	margin-top: 0.5vh;
+	margin-bottom: 2.5vh;
+	font-family: "Playfair Display, sans-serif";
+	font-weight: 300;
+	font-size: 0.8rem;
+	color: #d3fc8d;
+}
+
+.info2 {
+	margin-top: 0.5vh;
+	margin-bottom: 2.5vh;
+	font-family: "Playfair Display, sans-serif";
+	font-weight: 300;
+	font-size: 0.8rem;
+	color: #d3fc8d;
+	color: #DBF0F4;
+}
+
+.infoLogo {
+	margin-top: 0.7vh;
+	margin-bottom: 2vh;
+}
+
+
+
+
+/*! ------------------------------------------ VIZ svg ------------------------------------------ */
+
+/*
+.foto-tela {
+	padding: 1em;
+	top: 0;
+	right: 0;
+	width: 100vh;
+	height: auto;
+	background-image: url(../img/iceline.png);
+}
+*/
+
+#iceline {
+	width: 90%;
+}
+
+
+.st0 {
+	fill: #D3FC8D;
+}
+
+.st1 {
+	fill: #BEE3F4;
+}
+
+.st2 {
+	fill: #94F5E6;
+}
+
+.st3 {
+	fill: #94F8A1;
+}
+
+.st4 {
+	fill: none;
+	stroke: #D3D3D3;
+	stroke-width: 0.3;
+}
+
+.st5 {
+	fill: none;
+	stroke: #D3D3D3;
+	stroke-width: 0.3;
+	stroke-dasharray: 2, 3;
+}
+
+.st6 {
+	fill: none;
+}
+
+.st7 {
+	font-family: 'Helvetica-Light';
+}
+
+.st8 {
+	font-size: 12px;
+}
+
+.st9 {
+	font-size: 10px;
+}
+
+.st10 {
+	fill: none;
+	stroke: #000000;
+	stroke-width: 0.6;
+}
+
+.st11 {
+	font-family: 'Helvetica';
+}
+
+.st12 {
+	font-size: 8px;
+}
